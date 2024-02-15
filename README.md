@@ -11,6 +11,7 @@ conda env create -f environment.yml
 conda activate nom_de_l_env
 ```
 
+>Les datasets doivent être mis dans le dossier data/
 
 ![alt text](img/image-4.png)
 
