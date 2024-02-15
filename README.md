@@ -12,7 +12,7 @@ conda activate nom_de_l_env
 ```
 
 
-![alt text](image-4.png)
+![alt text](img/image-4.png)
 
 Introduction
 ------------
@@ -33,7 +33,7 @@ Analyse Exploratoire des Données (EDA)
 --------------------------------------
 
 Les analyses ont révélé une grande variabilité des prix, une distribution concentrée de la surface bâtie et du nombre de pièces principales. Les visualisations incluent des histogrammes, des graphiques de dispersion et des matrices de corrélation, soulignant l'importance de l'emplacement et des caractéristiques physiques des biens.
-![alt text](image.png)
+![alt text](img/image.png)
 *   **Boxplot pour la valeur immobilière**: Ce graphique montre la distribution de la valeur immobilière avec une médiane basse et plusieurs valeurs aberrantes extrêmes, ce qui indique une large variation des prix sur le marché immobilier. Cela pourrait signifier que des facteurs supplémentaires non représentés dans ce graphique influencent les prix.
     
 *   **Histogramme pour la surface bâtie**: La distribution de la surface bâtie des propriétés est principalement concentrée dans les gammes inférieures avec une longue queue à droite, suggérant que la plupart des propriétés ont une surface modeste avec quelques propriétés beaucoup plus grandes.
@@ -55,11 +55,11 @@ Ingénierie des Caractéristiques
     
 5.  **Création et utilisation des modèles BallTree** : Les modèles BallTree sont créés pour chaque région (ou zone), et ensuite utilisés pour chaque bien afin de calculer la distance moyenne et le prix moyen au m² des 10 biens les plus proches.
     
-![alt text](image-1.png)
+![alt text](img/image-1.png)
 
 L'implémentation fournie montre comment les modèles BallTree sont créés et utilisés pour enrichir les données avec le "prix moyen du quartier" et la "distance moyenne" pour chaque bien. L'algorithme BallTree, avec la métrique Haversine, calcule les distances et les indices des biens voisins, et ces informations sont utilisées pour calculer les nouvelles caractéristiques. Ces dernières sont ensuite enregistrées dans le dataset, améliorant ainsi la richesse des données disponibles pour la modélisation prédictive.
 
-![alt text](image-2.png)
+![alt text](img/image-2.png)
 
 *   **Corrélation positive** : Il y a une corrélation positive évidente entre le prix au m² d'un bien et le prix moyen au m² dans le voisinage. Cela suggère que si un bien est situé dans une zone où le prix moyen au m² est élevé, il est probable que le prix au m² de ce bien soit également élevé.
     
@@ -117,7 +117,7 @@ Les résultats de la POC démontrent que l'approche basée sur les données peut
 >Ces résultats forment une base solide pour la poursuite du développement d'outils d'estimation immobilière. Le potentiel d'amélioration est significatif, et les prochaines étapes consisteront à explorer ces voies pour affiner notre outil et fournir aux agents immobiliers une solution robuste et fiable pour évaluer les propriétés.
 
 ***Pour aller plus loin, il a été réalisé une map pour mieux visualiser les biens immobiliers vendus.***
-![alt text](image-3.png)
+![alt text](img/image-3.png)
 
 Recommandations et Prochaines Étapes
 ------------------------------------
