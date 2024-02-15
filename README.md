@@ -1,6 +1,19 @@
 Projet d'Evaluation Immobilière en Haute-Garonne - README
 =========================================================
 
+
+# Installation :
+```
+conda env create -f environment.yml
+```
+
+```
+conda activate nom_de_l_env
+```
+
+
+![alt text](image-4.png)
+
 Introduction
 ------------
 
@@ -95,20 +108,23 @@ Le coefficient de détermination (R²) à 0.485 indique que près de la moitié 
 
 ### Évaluation par Validation Croisée
 
-La validation croisée a été utilisée pour évaluer la stabilité de notre modèle. Les résultats montrent une moyenne du MAE de 547.222 avec un écart-type de 2.247, et une moyenne du R² de 0.475 avec un écart-type de 0.012. Ces résultats sont cohérents avec les performances du modèle sur l'ensemble de test et indiquent que notre modèle est relativement stable et ne souffre pas de surajustement.
+>La validation croisée a été utilisée pour évaluer la stabilité de notre modèle. Les résultats montrent une moyenne du MAE de 547.222 avec un écart-type de 2.247, et une moyenne du R² de 0.475 avec un écart-type de 0.012. Ces résultats sont cohérents avec les performances du modèle sur l'ensemble de test et indiquent que notre modèle est relativement stable et ne souffre pas de surajustement.
 
 ### Conclusion de la POC
 
 Les résultats de la POC démontrent que l'approche basée sur les données peut fournir des estimations de prix raisonnables et surpasser les méthodes traditionnelles basées sur les règles et l'expérience dans certains cas. Toutefois, avec un MAPE d'environ 28.50%, il est clair que le modèle pourrait être amélioré. Les erreurs pourraient être réduites en intégrant plus de données pertinentes, en affinant davantage les modèles, ou en explorant de nouvelles techniques d'ingénierie des caractéristiques.
 
-Ces résultats forment une base solide pour la poursuite du développement d'outils d'estimation immobilière. Le potentiel d'amélioration est significatif, et les prochaines étapes consisteront à explorer ces voies pour affiner notre outil et fournir aux agents immobiliers une solution robuste et fiable pour évaluer les propriétés.
+>Ces résultats forment une base solide pour la poursuite du développement d'outils d'estimation immobilière. Le potentiel d'amélioration est significatif, et les prochaines étapes consisteront à explorer ces voies pour affiner notre outil et fournir aux agents immobiliers une solution robuste et fiable pour évaluer les propriétés.
+
+***Pour aller plus loin, il a été réalisé une map pour mieux visualiser les biens immobiliers vendus.***
+![alt text](image-3.png)
 
 Recommandations et Prochaines Étapes
 ------------------------------------
 
-Il est recommandé d'intégrer progressivement le modèle dans le workflow actuel, en commençant par des tests en parallèle avec les méthodes existantes. Des améliorations potentielles pourraient inclure l'ajout de données plus granulaires et l'optimisation des modèles.
+>Il est recommandé d'intégrer progressivement le modèle dans le workflow actuel, en commençant par des tests en parallèle avec les méthodes existantes. Des améliorations potentielles pourraient inclure l'ajout de données plus granulaires et l'optimisation des modèles.
 
 Conclusion
 ----------
 
-Ce projet démontre le potentiel d'une approche basée sur les données pour compléter et améliorer l'expertise des agents immobiliers, offrant une méthode d'évaluation plus objective et précise qui peut aider l'entreprise à rester compétitive.
+>Ce projet démontre le potentiel d'une approche basée sur les données pour compléter et améliorer l'expertise des agents immobiliers, offrant une méthode d'évaluation plus objective et précise qui peut aider l'entreprise à rester compétitive.
